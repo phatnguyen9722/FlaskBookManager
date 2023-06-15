@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/themify-icons/themify-icons.css')}}">
+</head>
+
+<body>
+    {% block body %}
+    <div class="container">
+        <div class="header">
+            <h1>This is Book Manager</h1>
+        </div>
+        <div class="nav">
+            <h2>
+                Book List
+                <button type="button" class="btn btn-add">
+                    Add Book
+                </button>
+            </h2>
+
+            <table class="table">
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Book of Magic</td>
+                    <td>Mr.Bean</td>
+                    <td>$40</td>
+                    <td>
+                        <button type="button" class="btn btn-edit">
+                            <a href="#">Edit</a>
+                        </button>
+                        <button type="button" class="btn btn-delete">
+                            <a href="#">Delete</a>
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Layout  -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Insert Form  -->
+                <div class="insert-form">
+                    <div class="insert-form__header">
+                        <h3 class="insert-form__heading">
+                            Book Manager
+                        </h3>
+                        <div class="insert-close">
+                            <i class="ti-close"></i>
+                        </div>
+                    </div>
+
+                    <div class="insert-form__form">
+                        <div class="insert-form__group">
+                            <input type="text" class="insert-form__input" placeholder="Serial">
+                        </div>
+                        <div class="insert-form__group">
+                            <input type="text" class="insert-form__input" placeholder="Name">
+                        </div>
+                        <div class="insert-form__group">
+                            <input type="text" class="insert-form__input" placeholder="Author">
+                        </div>
+                        <div class="insert-form__group">
+                            <input type="text" class="insert-form__input" placeholder="Price">
+                        </div>
+                    </div>
+
+                    <div class="insert-data">
+                        <button class="insert-btn">Insert Data</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+
+</html>
