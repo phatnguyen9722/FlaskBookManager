@@ -65,28 +65,31 @@
 
                     <div class="insert-form__form">
                         <div class="insert-form__group">
-                            <input type="text" class="insert-form__input" placeholder="Serial">
+                            <label for="serial_input">Serial</label>
+                            <input type="text" id="serial_input" class="insert-form__input" placeholder="Serial">
                         </div>
                         <div class="insert-form__group">
+                            <label>Name</label>
                             <input type="text" class="insert-form__input" placeholder="Name">
                         </div>
                         <div class="insert-form__group">
+                            <label>Author</label>
                             <input type="text" class="insert-form__input" placeholder="Author">
                         </div>
                         <div class="insert-form__group">
+                            <label>Price</label>
                             <input type="text" class="insert-form__input" placeholder="Price">
                         </div>
                     </div>
 
                     <div class="insert-data">
-                        <button class="insert-btn">Insert Data</button>
+                        <button class="insert-btn" type="submit">Insert</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     {% endblock %}
-
 
     <script src="{{url_for('static', filename='js/index.js')}}"></script>
 </body>
