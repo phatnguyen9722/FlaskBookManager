@@ -20,7 +20,12 @@ td {
   margin: 0px auto;
 }
 
-.header {
+h1 {
+  color: #0e2954;
+  padding: 10px;
+}
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +33,7 @@ td {
   padding: 10px 0 10px 0;
 }
 
-.header h1 {
+header h1 {
   color: #fff;
 }
 
@@ -40,12 +45,15 @@ td {
 }
 
 .nav h2 button {
-  background-color: aqua;
+  background-color: #0e2954;
+  font-size: 1rem;
+  color: #fff;
+  width: 3.5rem;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.nav table {
+.content table {
   border: 1px solid #ccc;
   background-color: bisque;
   width: 100%;
@@ -53,23 +61,23 @@ td {
   align-items: center;
 }
 
-.nav .btn-edit {
+.content .btn-edit {
   background-color: green;
   border-radius: 5px;
   width: 2.5rem;
   height: 1.5rem;
 }
-.nav .btn-delete {
+.content .btn-delete {
   background-color: red;
   border-radius: 5px;
   width: 3rem;
   height: 1.5rem;
 }
-.nav .btn a {
+.content .btn a {
   color: #ffffff;
 }
 
-.nav table td {
+.content table td {
   padding-left: 10px;
   background-color: #ffffff;
 }
